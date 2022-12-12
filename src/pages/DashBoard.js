@@ -15,6 +15,9 @@ export default function DashBoard() {
   useEffect(() => {
     async function fetchEnrollmentData() {
       try {
+        document.getElementById("enrollNowText").style.display = "none";
+        document.getElementById("enrolledText").style.display = "none";
+        document.getElementById("slotText").style.display = "none";
         console.log('Inside fetchEnrollmentData function');
         setError(null);
         const res = await API.post('/enrollment/receive', { user });
@@ -26,7 +29,13 @@ export default function DashBoard() {
         const currDate = new Date(current.getFullYear(), current.getMonth(), current.getDate());
         if(enrollmentDetails[0].enrollment_date == null || currDate > endDate){
           setIsEnrolled(false);
+          document.getElementById("enrollNowText").style.display = "block";
         }
+        else{
+          document.getElementById("enrolledText").style.display = "block";
+          document.getElementById("slotText").style.display = "block";
+        }
+        document.getElementById("waitText").style.display = "none";
 
         setLastDate(endDate.toString().substring(0, 10));
 
@@ -37,6 +46,8 @@ export default function DashBoard() {
         else if(s == 3) slot = "8-9 AM";
         else slot = "5-6 PM";
         setSlot(slot);
+
+        
       } catch (error) {
         setError(error?.response?.data?.message);
         console.log('Enrollment details fetch error', error);
@@ -54,19 +65,20 @@ export default function DashBoard() {
         <h3>Hi, {user.name}</h3>
       </div>
 
-      {!isEnrolled ?
+      <div id="waitText">
+        <h4 className="text-danger">Wait...</h4>
+      </div>
+
       <div id="enrollNowText">
         <h4>You don't have a subscription. <Link to='/enroll'>Enroll now!</Link>.</h4>
       </div>
-      : 
-      <>
-      <div>
+      
+      <div id="enrolledText">
         <h4>You are enrolled. Your subscription ends on {lastDate}.</h4>
       </div>
-      <div className='my-2'>
+      <div className='my-2' id="slotText">
         <h5>Time Slot: {slot}</h5>
       </div>
-      </>}
 
     </div>
     </>
