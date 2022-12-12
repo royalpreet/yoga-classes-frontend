@@ -1,7 +1,8 @@
 
 # Yoga Classes
 
-The frontend of the app is built using ReactJS.
+The frontend of the app is built using ReactJS.<br>
+It is hosted on Netlify: https://wondrous-druid-63f9d8.netlify.app
 
 
 ## Application Features
@@ -16,6 +17,12 @@ The frontend of the app is built using ReactJS.
 - Email is not being verified.
 = User will be able to change time slot next month while paying fee.
 
+## Screenshots of the app
+
+![3](https://user-images.githubusercontent.com/54669961/207129059-d14ec9fd-cf8c-4ed2-9ccf-1c9d9399de45.PNG)
+![4](https://user-images.githubusercontent.com/54669961/207129101-767aee17-3a0a-448f-9869-483489c97a86.PNG)
+![1](https://user-images.githubusercontent.com/54669961/207129118-3bf5794f-7c81-417f-af9e-2894aaa9d357.PNG)
+![2](https://user-images.githubusercontent.com/54669961/207129137-a43fbbc2-4f89-44ca-9935-0c03318aa904.PNG)
 
 ## 
 To run this project locally -
