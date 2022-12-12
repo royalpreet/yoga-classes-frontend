@@ -1,38 +1,35 @@
 
-# T-Shirt-Design
+# Yoga Classes
 
-This is an application for designing custom T-Shirts developed in ReactJS. 
-You can use it for creating your Favourite T-Shirt.
+The frontend of the app is built using ReactJS.
 
 
 ## Application Features
 
-- Picking Colour of T-Shirt.
-- Inserting images as logos for T-Shirt.
-- Inserting ,Scaling and colouring Text.
-- Adding your customized T-Shirt in a cart.
+- User can sign up using email and password and then login into his/her account.
+- On the home page, user will be asked to enroll if not already where he/she will be able to select time slot and then pay fee.
+- If already enrolled, user will be able to see the end date of their subscription on the home page as well as their time slot.
 
-  
-## Screenshots of Project
-## Designing Page
-![App Screenshot](https://github.com/mayank0811/T-Shirt-Design/blob/master/public/designss.png?raw=true)
+## Other important points
+- Though authentication was not mentioned in the assignment, it is included because a user will be able to make payment only after he/she is logged in.
+- Password is stored into the the database after encryption.
+- Email is not being verified.
+= User will be able to change time slot next month while paying fee.
 
-## Shopping Cart
-![App Screenshot](https://github.com/mayank0811/T-Shirt-Design/blob/master/public/cartss.png?raw=true)
-## Running Locally
 
+## 
 To run this project locally -
 
 Clone the project
 
 ```bash
-  git clone https://github.com/mayank0811/T-Shirt-Design.git
+  git clone https://github.com/royalpreet/yoga-classes-frontend.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd T-Shirt-Design
+  cd yoga-classes-frontend
 ```
 
 Install dependencies
@@ -46,10 +43,5 @@ Start the server
 ```bash
   npm start
 ```
-
-  
-## Feedback
-
-If you have any feedback, please reach out to me at sharma.mayank0811@gmail.com
 
   
