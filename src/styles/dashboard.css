@@ -1,0 +1,128 @@
+.dashborad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dash_cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+/*             design disply            */
+.dash_display {
+  width: 500px;
+  height: 500px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.design_img {
+  width: 40%;
+  height: 25%;
+  margin: 10px 0;
+}
+
+.design_text {
+  width: 40%;
+}
+
+.design_text p {
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+/*             design setting            */
+.dash_setting {
+  margin: 50px;
+}
+
+.design_title {
+  font-size: 20px;
+  text-align: left;
+  margin: 15px 0;
+}
+
+.tshirt_options {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.tshirt_options img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.text_input {
+  width: 100%;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  border-bottom: 1.5px solid #616060;
+  font-size: 15px;
+}
+
+.color_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.color_input {
+  width: 50px;
+  height: 40px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+}
+
+.number_input {
+  padding: 5px;
+  outline: none;
+  margin-left: 10px;
+}
+
+.bottom_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.final_price {
+  font-size: 20px;
+  color: #616060;
+}
+
+.order_btn {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  color: #ffffff;
+  background-color: #026d32;
+  font-size: 18px;
+}
+
+.order_btn:hover {
+  background-color: #01180b;
+}
