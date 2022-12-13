@@ -4,6 +4,8 @@
 The frontend of the app is built using ReactJS.<br>
 It is hosted on Netlify: https://wondrous-druid-63f9d8.netlify.app
 
+<b>Note:</b> The app might run slow as the server where backend is hosted is slow. The backend server is spun down after 15 minutes of inactivity. When a new request comes in, it spins up again. This can cause a response delay of up to 30 seconds for the first request that comes in after a period of inactivity. So, you might have to wait for 30 seconds after you hit the Register button.
+
 
 ## Application Features
 
