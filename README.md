@@ -12,10 +12,12 @@ It is hosted on Netlify: https://wondrous-druid-63f9d8.netlify.app
 - If already enrolled, user will be able to see the end date of their subscription on the home page as well as their time slot.
 
 ## Other important points
+- The app might run slow as the server where backend is hosted is slow. It works fine on local.
 - Though authentication was not mentioned in the assignment, it is included because a user will be able to make payment only after he/she is logged in.
 - Password is stored into the the database after encryption.
 - Email is not being verified.
-= User will be able to change time slot next month while paying fee.
+- User will be able to change time slot next month while paying fee.
+- When we click on  Pay Fees button, it is assumed that the fees is paid since it is mentioned in the requirements that we should assume that we have a mock function named which does the payment for us.
 
 ## Screenshots of the app
 
